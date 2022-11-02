@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>lesson_16</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="page page-question">
+            <div class="page-question__container">
+                <div class="page-question__body">
+                    <div class="page-question__image">
+                        <img src="img/illustration.svg" alt="illustration">
+                    </div>
+                    <div class="page-question__content">
+                        <div class="page-question__heading heading-question">
+                            <h3 class="heading-question__subtitle subtitle">Any questions?</h3>
+                            <h2 class="heading-question__title title">Drop us a line</h2>
+                        </div>
+                        <form action="https://jsonplaceholder.typicode.com/posts" class="page-question__form form-question" method="POST">
+                            <div class="form-question__inputs">
+                                <div class="form-question__line">
+                                    <label for="name" class="form-question__label">First Name*</label>
+                                    <input id="name" type="text" name="name" class="form-question__input" required autocomplete="off" placeholder="Your first name">
+                                </div>
+                                <div class="form-question__line">
+                                    <label for="last_name" class="form-question__label">Last  Name*</label>
+                                    <input id="last_name" type="text" name="last_name" class="form-question__input" required autocomplete="off" placeholder="Your last name">
+                                </div>
+                                <div class="form-question__line">
+                                    <label for="e-mail" class="form-question__label">Email*</label>
+                                    <input id="e-mail" type="email" name="e-mail" class="form-question__input" required autocomplete="off" placeholder="Your working email">
+                                </div>
+                                <div class="form-question__line">
+                                    <label for="phone" class="form-question__label">Phone</label>
+                                    <input id="phone" type="tel" name="phone" class="form-question__input" required autocomplete="off" placeholder="Your phone number">
+                                </div>                   
+                            </div>
+                            <div class="form-question__area">
+                                <label for="" class="form-question__label">Message*</label>
+                                <textarea name="" id="" cols="30" rows="10" class="form-question__textarea" placeholder="Your message"></textarea>
+                            </div>                            
+                            <div class="form-question__action">
+                                <div class="form-question__check check-form">
+                                    <input id="school" autocomplete="off" type="checkbox"  class="check-form__checkbox">
+                                    <label for="school" class="check-form__label"><span class="check-form__text">I agree to receive communications from Createx Online School</span></label>
+                                </div>
+                                <div class="form-question__btn">
+                                    <button class="form-question__button">Send message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <form action="https://jsonplaceholder.typicode.com/posts" class="page-question__radio radio-btn" method="POST">                    
+                    <div class="radio-btn__title">Enter your gender</div>					
+                    <div class="radio-btn__radio">
+                        <input checked class=" radio-btn__input" id="male" required autocomplete="off" name="gender" value="male" type="radio">
+                        <label class="radio-btn__label" for="male">Male</label>
+                    </div>
+                    <div class="radio-btn__radio">
+                        <input class="radio-btn__input" id="female" required autocomplete="off" name="gender" value="female" type="radio">
+                        <label class="radio-btn__label" for="female">Female</label>
+                    </div>	
+                    <button class="radio-btn__button" type="submit">Send</button>				
+                </form>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    
+</body>
+</html>
